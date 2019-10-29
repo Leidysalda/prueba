@@ -21,6 +21,7 @@ _Tools_
 * [stdio](http://www.dropwizard.io/1.0.2/docs/) - Library
 * [stdarg](https://maven.apache.org/) - Library
 *  Linux Commands -
+
 ![Alt](shorturl.at/mGRW6)
 
 ## Autores ✒️
@@ -28,6 +29,6 @@ _Tools_
 * **Juan Camilo Esquivel** - *Trabajo Inicial* - [cmlesquivel](https://github.com/cmlesquivel)
 * **Leidy J. Saldaña** - *Documentación* - [Leidysaldab](https://github.com/Leidysalda)
 
+![Alt](https://ichef.bbci.co.uk/news/320/cpsprodpb/577D/production/_96979322_gettyimages-143176813.jpg)
 
 ## Licencia 📄
-
