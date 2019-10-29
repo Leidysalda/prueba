@@ -1,4 +1,4 @@
-**_PRINTF                 Linux Programmer's Manual                 _PRINTF**
+**/_PRINTF                 Linux Programmer's Manual                 _PRINTF**
        **NAME**
 
 		_printf - compilation of macros, structures and functions to
