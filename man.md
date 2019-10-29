@@ -1,7 +1,7 @@
-**_PRINTF                 Linux Programmer's Manual                 _PRINTF
+_PRINTF                   Linux Programmer's Manual                     _PRINTF
 
 **NAME**
->_printf - compilation of macros, structures and functions to perform the "printf" function.
+_printf - compilation of macros, structures and functions to perform the "printf" function.
 
 **SYNOPSIS**
 >**#include [<stdio.h>](http://man7.org/linux/man-pages/man3/stdio.3.html)
@@ -39,7 +39,7 @@
 >null.
 
 **Referenced By**
-[printf(3)](https://linux.die.net/man/3/printf), [stdio(3)](http://man7.org/linu
+[printf(3)](https://linux.die.net/man/3/printf) [stdio(3)](http://man7.org/linu
 x/man-page\s/man3/stdio.3.html), [stdarg(3)](https://linux.die.net/man/3/std\
 arg).
 
