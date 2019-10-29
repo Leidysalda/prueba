@@ -1,7 +1,7 @@
-**_PRINTF**                 **Linux Programmer's Manual**                 **_PRINTF**
-       **NAME**          The name of this manual page.
+**_PRINTF                 Linux Programmer's Manual                 _PRINTF**
+       **NAME**
 
-       		_printf - compilation of macros, structures and functions to
+		_printf - compilation of macros, structures and functions to
 		perform the "printf" function.
 
 
