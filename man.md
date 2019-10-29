@@ -1,6 +1,8 @@
 PRINTF  Linux Programmer's Manual                     PRINTF
 
-**NAME**  _printf - compilation of macros, structures and functions to perform the "printf" function.
+**NAME**
+
+_printf - compilation of macros, structures and functions to perform the "printf" function.
 
 **SYNOPSIS**
 
