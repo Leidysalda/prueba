@@ -3,7 +3,7 @@
 _This proyect is the analogy of the printf function of the standard library._
 _The function _printf() prints arguments depending of the typeof input data provided by the user, whether character, integer, string, float, among others._
 
-![Alt](shorturl.at/eprQ8)
+![Alt](https://images.slideplayer.com/26/8569368/slides/slide_6.jpg)
 
 
 ```
@@ -22,7 +22,7 @@ _Tools_
 * [stdarg](https://maven.apache.org/) - Library
 *  Linux Commands -
 
-![Alt](shorturl.at/mGRW6)
+![Alt](https://www.datodiario.com/wp-content/uploads/2017/10/AAEAAQAAAAAAAAM2AAAAJGRjNDM3NWIwLWIxODEtNGViNi05Y2RhLTk5ZmZkNmY1YzkzMQ.jpg)
 
 ## Autores ✒️
 
