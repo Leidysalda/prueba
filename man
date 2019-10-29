@@ -1,8 +1,5 @@
-<<<<<<< HEAD
 **/_PRINTF                 Linux Programmer's Manual                 _PRINTF**
-=======
 #_PRINTF                 Linux Programmer's Manual                 _PRINTF
->>>>>>> 2459846354012f31e3fd6ac41e631e53d418f7a7
        **NAME**
 
 		_printf - compilation of macros, structures and functions to
