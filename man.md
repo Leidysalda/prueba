@@ -1,4 +1,5 @@
-PRINTF  Linux Programmer's Manual                     PRINTF
+**PRINTF**                **Linux Programmer's Manual**                         **PRINTF**
+
 
 **NAME**
 
@@ -18,69 +19,71 @@ _printf - compilation of macros, structures and functions to perform the "printf
 **#include "Holberton.h"**
 
 
-**int _printf**(**const char** *_format, ...)**;**
+**int _printf**(**const char** *_format, ...);
 
 
 
 **DESCRIPTION**
 
 
->>The function **_printf()** prints arguments depending of the
+The function **_printf()** prints arguments depending of the
 
 
->>typeof input data provided by the user, whether character,
+typeof input data provided by the user, whether character,
 
 
->>integer, string, float, among others.
+integer, string, float, among others.
 
 
->>This function is the analogy of the printf function of the
+This function is the analogy of the printf function of the
 
 
->>standard library.
+standard library.
 
 
 
 **OPTIONS**
 
 
->>A description of the command-line options accepted by a
+A description of the command-line options accepted by a
 
->>program and how they change its behavior.
+program and how they change its behavior.
 
 
->>This section should appear only for Section 1 and 8
+This section should appear only for Section 1 and 8
 
->>manual pages.
+manual pages.
+
 
 **EXIT STATUS**
 
 
->>A list of the possible exit status values of a program
+A list of the possible exit status values of a program
 
 
->>and the conditions that cause these values to be
+and the conditions that cause these values to be
 
 
->>returned.
+returned.
 
 
->>This section should appear only for Section 1 and 8
+This section should appear only for Section 1 and 8
 
 
->>manual pages.
+manual pages.
+
 
 **RETURN VALUE**
 
 
->>This function return the characters printed excluding the
+This function return the characters printed excluding the
 
 
->>null.
+null.
 
 
 **Referenced By**
 
 
->>[printf(3)](https://linux.die.net/man/3/printf); [stdio(3)](http://man7.org/linux/man-page\s/man3/stdio.3.html), [stdarg(3)](https://linux.die.net/man/3/std\arg).
+[printf(3)](https://linux.die.net/man/3/printf); [stdio(3)](http://man7.org/linux/man-page\s/man3/stdio.3.html), [stdarg(3)](https://linux.die.net/man/3/std\arg).
 
