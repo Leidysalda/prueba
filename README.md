@@ -3,9 +3,6 @@
 _This proyect is the analogy of the printf function of the standard library._
 _The function _printf() prints arguments depending of the typeof input data provided by the user, whether character, integer, string, float, among others._
 
-![Alt](https://images.slideplayer.com/26/8569368/slides/slide_6.jpg)
-
-
 ```
 #include <stdio.h>
 #include <stdarg.h>
