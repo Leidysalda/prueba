@@ -34,6 +34,6 @@ int main(void)
 * **Leidy J. Saldaña** - *Shell Project* - [leidysalda](https://github.com/Leidysalda)
 
 
-* **Juan C. López** - *Shell Project* - [juan-bbogota](https://github.com/juan-bogota)
+* **Juan C. López** - *Shell Project* - [juan-bogota](https://github.com/juan-bogota)
 
 ## License 📄
