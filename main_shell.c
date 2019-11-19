@@ -8,7 +8,7 @@
  **/
 int main(void)
 {
-	char *buffer = NULL, delim[2] = " \n", **command, *tok;
+	char *buffer = NULL, delim[3] = " \n\t", **command, *tok;
 	int status, i, len, ex;
 	pid_t pidC;
 
@@ -74,10 +74,11 @@ char *validator_getline(void)
 		perror("Error in Allocate Memory");
 		return(NULL);
 	}
-	if(ret == -1)
+	if(ret == EOF)
 	{
-		perror("Error Getline");
-		return(NULL);
+		free(buffer);
+		perror("Error EOF");
+		exit(1);
 	}
 	if(ret == 1)
 	{
