@@ -77,7 +77,7 @@ char *validator_getline(void)
 	if(ret == EOF)
 	{
 		free(buffer);
-		perror("Error EOF");
+		perror("EOF");
 		exit(1);
 	}
 	if(ret == 1)
@@ -87,3 +87,11 @@ char *validator_getline(void)
 	}
 	return(buffer);
 }
+
+
+/**
+
+STRTOK
+
+
+*/
