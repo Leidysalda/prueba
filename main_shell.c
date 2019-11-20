@@ -1,6 +1,4 @@
 #include "myshell.h"
-
-
 /**
  * main - super simple shell
  *
