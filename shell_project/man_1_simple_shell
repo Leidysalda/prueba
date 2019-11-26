@@ -1,0 +1,145 @@
+.TH Simple_Shell
+
+.Sh SIMPLE SHELL
+.B ./hsh
+\- the standard command interpreter
+
+.SH SYNOPSIS
+.B hsh
+.RB {\| argv \|}
+
+.SH DESCRIPTION
+.B Simple Shell
+_hsh_ is a command programming language that executes commands read from a
+terminal or a file.
+
+.B Commands
+A simple-command is a sequence of non blank words separated by blanks (a blank
+is a tab or a space). The first word specifies the name of the command to be
+executed. Except as specified below the remaining words are passed as arguments
+to the invoked command. The command name is passed as argument 0 (see exec(2)).
+The value of a simple-command is its exit status if it terminates normally.
+
+
+The following parameters are used by the shell:
+.RS
+.nf
+- PATH	      The search path.
+- HOME	      The default argument (home directory).
+- ENV         Environment list.
+- PPID	      Prints the PID of the parent process.
+- PWD	      The current working directory as set by the cd command.
+.RE
+
+.B Input and output
+Before a command is executed its input and output may be redirected using a
+special notation interpreted by the shell.
+
+.B Environment
+The environment is a list of name-value pairs that is passed to an executed
+program in the same way as a normal argument list; see exec(2) and environ(5).
+
+.B Special commands
+The following commands are executed in the shell process itself:
+.RS
+.nf
+- file	Read and execute commands from file and return. The search path $PATH
+is used to find the directory containing file.
+- exit	Causes the shell to exit with the exit status.
+- pwd  	Prints the name of the current directory.
+- wait	Wait for the specified process and report its termination status.
+
+.SH FILES
+.nf
+/bin/bash		- The bash executable.
+/etc/profile 		- The systemwide initialization file, executed for login
+			shells.
+/etc/bash.bash_logout 	- The systemwide login shell cleanup file, executed when
+			a login shell exits.
+~\\.bash_profile 	- The personal initialization file, executed for login
+			shells.
+~\\.bashrc 		- The individual per-interactive-shell startup file.
+~\\.bash_logout 	- The individual login shell cleanup file, executed when
+			a login shell exits.
+~\\.inputrc 		- Individual readline initialization file
+.RE
+
+SEE ALSO
+access (man 2), chdir (man 2), close (man 2), closedir (man 3), execve (man 2),
+exit (man 3), _exit (man 2), fflush (man 3), fork (man 2), free (man 3), getcwd
+(man 3), getline (man 3), isatty (man 3), kill (man 2), malloc (man 3), open
+(man 2), opendir (man 3), perror (man 3), read (man 2), readdir (man 3), signal
+(man 2), stat (__xstat) (man 2), lstat (__lxstat) (man 2), fstat (__fxstat)
+(man 2), strtok (man 3), wait (man 2), waitpid (man 2), wait3 (man 2), wait4
+(man 2), write (man 2), env(1), exec(2), signal(2).
+
+
+.SH EXAMPLES
+Use ./fork
+
+#include <stdio.h>
+#include <unistd.h>
+
+/**
+ * main - fork example
+ *
+ * Return: Always 0.
+ */
+int main(void)
+{
+    pid_t my_pid;
+    pid_t child_pid;
+
+    child_pid = fork();
+    if (child_pid == -1)
+    {
+        perror("Error:");
+        return (1);
+    }
+    my_pid = getpid();
+    printf("My pid is %u\n", my_pid);
+    if (child_pid == 0)
+    {
+        printf("(%u) Nooooooooo!\n", my_pid);
+    }
+    else
+    {
+        printf("(%u) %u, I am your father\n", my_pid, child_pid);
+    }
+    return (0);
+}
+
+.SH EXIT STATUS
+.TP
+.B
+0
+Success
+
+.TP
+.B
+1
+Success but reboot required
+
+.TP
+.B
+2
+Success but no reboot required
+
+.SH AUTHORS
+Leidy J. Saldaña https://github.com/Leidysalda
+
+Juan C. López https://github.com/JuanLopezS
+
+.SH COPYRIGHT
+.PP
+Copyright 2019. All rights reserved
+
+.SH CREDITS
+.PP
+This man page is created only for demonstration.
+
+.SH RETURN VALUE
+This function return the characters printed excluding the null.
+
+.SH Referenced By
+[SH(1)](https://linux.die.net/man/1/sh).
