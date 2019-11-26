@@ -1,4 +1,4 @@
-# SHELL PROJETC - SIMPLE SHELL
+# SHELL PROJECT - SIMPLE SHELL
 
 Unix shell is a command-line interpreter or shell that provides a command line user interface for Unix-like operating systems. The shell is both an interactive command language and a scripting language, and is used by the operating system to control the execution of the system using shell scripts. [Wikipedia-Unix Shell](https://en.wikipedia.org/wiki/Unix_shell)
 
@@ -7,20 +7,19 @@ Unix shell is a command-line interpreter or shell that provides a command line u
 
 The shell will be compiled this way🔧
 
-´´´
+```
 gcc -Wall -Werror -Wextra -pedantic *.c -o hsh
-´´´
+```
 
 For testing
 
-´´´
+```
 $ ./hsh
 ($) /bin/ls
 hsh main.c shell.c
 ($)
 ($) exit
-$
-´´´
+```
 
 To run tests ⚙️
 
@@ -30,7 +29,7 @@ This project consists of test cases for the simple shell created in Holberton Sc
 
 Deployment 📦
 
-´´´
+```
 #include <stdio.h>
 #include <unistd.h>
 #include <sys/types.h>
@@ -64,25 +63,35 @@ int main(void)
     }
     return (0);
 }
-´´´
+```
 
-Tools 🛠️
+## Tools 🛠️
 
 *_getline_ [Read line ./prompt](https://linux.die.net/man/3/getline)
+
 *_execve_ [System call - Executing a program] (https://linux.die.net/man/2/execve)
-*_fork_ [Creating processes](https://linux.die.net/man/2/fork)
+
+*_fork_ [Creating processes](https://linux.die.net/man/2/fork
+
 *_wait_ [Suspends execution of the calling process](https://linux.die.net/man/2/wait)
 
-Librarys
+## Librarys :books:
+
 #include (stdio.h)
+
 #include <stdio.h>
+
 #include <stdlib.h>
+
 #include <unistd.h>
+
 #include <string.h>
+
 #include <sys/wait.h>
+
 #include "myshell.h"
 
-Coding style ⌨️
+## Coding style ⌨️
 
 Use the Betty style, it will be checked using [betty-style.pl](https://github.com/holbertonschool/Betty/blob/master/betty-style.pl) and [betty-doc.pl](https://github.com/holbertonschool/Betty/blob/master/betty-doc.pl) 
 
