@@ -1,17 +1,18 @@
 # SHELL PROJECT - SIMPLE SHELL
 
-Unix shell is a command-line interpreter or shell that provides a command line user interface for Unix-like operating systems. The shell is both an interactive command language and a scripting language, and is used by the operating system to control the execution of the system using shell scripts. [Wikipedia-Unix Shell](https://en.wikipedia.org/wiki/Unix_shell)
+Unix shell is a command-line interpreter or shell that provides a command line user interface for Unix-like operating systems. The shell is both an interactive command language and a scripting language, and is used by the operating
+system to control the execution of the system using shell scripts. [Wikipedia-Unix Shell](https://en.wikipedia.org/wiki/Unix_shell)
 
 ![Shell](https://upload.wikimedia.org/wikipedia/commons/1/1f/Tcsh_ejecut%C3%A1ndose_en_escritorio_Mac_OSX.png)
 
 
-The shell will be compiled this way🔧
+## The shell will be compiled this way🔧
 
 ```
 gcc -Wall -Werror -Wextra -pedantic *.c -o hsh
 ```
 
-For testing
+## For testing
 
 ```
 $ ./hsh
@@ -21,7 +22,7 @@ hsh main.c shell.c
 ($) exit
 ```
 
-To run tests ⚙️
+## To run tests ⚙️
 
 This project consists of test cases for the simple shell created in Holberton School Bogotá.
 [Test](https://github.com/luismedinaeng/bog0919-simple_shell_tests)
@@ -67,11 +68,11 @@ int main(void)
 
 ## Tools 🛠️
 
-*_getline_ [Read line ./prompt](https://linux.die.net/man/3/getline)
+*_getline_ [Get line](https://linux.die.net/man/3/getline)
 
-*_execve_ [System call - Executing a program] (https://linux.die.net/man/2/execve)
+*_execve_ [System call - Executing a program](https://linux.die.net/man/2/execve)
 
-*_fork_ [Creating processes](https://linux.die.net/man/2/fork
+*_fork_ [Creating processes](https://linux.die.net/man/2/fork)
 
 *_wait_ [Suspends execution of the calling process](https://linux.die.net/man/2/wait)
 
@@ -97,11 +98,10 @@ Use the Betty style, it will be checked using [betty-style.pl](https://github.co
 
 ## Authors ✒️
 
-* **Leidy J. Saldaña** - *Shell Project* - [leidysalda](https://github.com/Leidysalda)
-
-
 * **Juan C. López** - *Shell Project* - [juan-bogota](https://github.com/juan-bogota)
 
+
+* ** Leidyd J. Saldaña** - *Shell Project - [leidysalda](https://github.com/Leidysalda)
 Licence 📄
 
-This project is under License (https://opensource.org/).
+This project is under [License](https://opensource.org/).
