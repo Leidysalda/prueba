@@ -1,35 +1,42 @@
-#!/usr/bin/python3
-"""Store first object
+#!/usr/bin env python3
+"""Defines all common attributes/methods for other classes
 """
-from models.base_model import BaseModel
+from datetime import datetime
+import uuid
 import json
-import os
+import models
+from os import path
+from models.base_model import BaseModel
 
 class FileStorage:
-    """Filestorage
+    """serializes instances to a JSON file and deserializes JSON file to instances
     """
-    __file_path = 'models/file.json'
-    __objects = ''
-
-    def __init__():
-        storage = FileStorage()
-        storage.reload()
-        return(storage)
+    __file_path = "file.json"
+    __objects = {}
 
     def all(self):
-        return(self.__objets)
+        """Returns the dictionary __objects
+        """
+        return self.__objects
 
     def new(self, obj):
-        for k,v in items(self.__objects):
-            k = (cls.__name__)
-            return(self.__objects)
+        """Add new object to variable __objects
+        """
+
+        ke= obj.__class__.__name__ + '.' + obj.id
+        self.__objects[ke] = obj
 
     def save(self):
-        with open("file.json", "a") as fl:
-            json.dump(self.__objects, fl)
-            json_str = json.dumps(self.__objects)
-            return(json_str)
+        new_dict = {}
+        for key in self.__objects:
+            new_dict[key] = self.__objects[key].to_dict()
+        with open(self.__file_path, mode="w") as fl:
+            json.dump(new_dict, fl)
 
     def reload(self):
-        if file.json:
-            self.__dict__ = json.loads(self.__objects)
+        """deserializes the JSON file to __objects
+        """
+        if path.isfile(self.__file_path):
+            new_file = {}
+            with open(self.__file_path, mode="r") as fl:
+                new_file = json.load(fl)
